@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Tests", "0 - Tests", "{8A5396B1-15D9-4A65-8758-698127D7BA96}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Tests", "1 - Tests", "{8A5396B1-15D9-4A65-8758-698127D7BA96}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Dominio", "1 - Dominio", "{2B4BD4A3-5B2F-4A72-927F-DC5D901CD665}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{2B4BD4A3-5B2F-4A72-927F-DC5D901CD665}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Data", "2 - Data", "{1C4D4EF8-D432-4C12-8F2C-5D72968DD9E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{FF768540-148F-41C0-A13E-C85F2F9D38D7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Application", "4 - Application", "{FF768540-148F-41C0-A13E-C85F2F9D38D7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Presentation", "4 - Presentation", "{91B783CF-F47D-49AB-A7EB-8D6BA22B0CD9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Presentation", "5 - Presentation", "{91B783CF-F47D-49AB-A7EB-8D6BA22B0CD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Documentation", "0 - Documentation", "{FE3F6273-A434-4015-B55B-5C9011C5368B}"
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
