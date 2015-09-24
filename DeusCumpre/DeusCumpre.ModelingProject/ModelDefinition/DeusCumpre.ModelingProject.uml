@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="7d593054-92f9-48ab-bd1c-ce0a170f2d80"
+  name="DeusCumpre.ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="c019070d-9de9-4261-9141-3f21080b6e72"
+        name="Visitante"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c04daf55-394e-4458-ae58-4e1bf3fc905e"
+            isDerived="false"
+            sourceEndRoleName="Visitante"
+            targetEndRoleName="Efetuar login "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="59f3b29d-c99c-48ff-9a8d-e8fca386011f"
+              LastKnownName="Efetuar login "
+              LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd2fb6dd-0dcd-4cdd-8fb1-524e22b25e2a"
+                  name="Visitante"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ce7d687-6dd8-45da-a8a8-d510c8e27fe5"
+                  name="Efetuar login "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="24f25ec5-4adf-441f-8185-c4084e8c1695"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="531c44cc-88c9-4c86-bb3f-5de2fb5c98dd"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="0cea69be-b8a2-42f5-864c-4a0e4c3758d6"
+              LastKnownName="Usuário"
+              LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="54d395a3-3a58-42b2-ab51-c4baf7556e52"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Editar post"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="37f5409c-45d2-40d3-bb37-952de7ce4d37"
+              LastKnownName="Editar post"
+              LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d5fef54-509e-4d22-8aca-6b0c6d0b1688"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="492b1736-f4f6-4546-996a-6b594a6032db"
+                  name="Editar post"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d7f50333-76ef-4746-8fbe-20c301f1e70f"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Excluir post"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e65f2d9-0aa9-4261-b83c-278779075f81"
+              LastKnownName="Excluir post"
+              LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c90a373a-e0f8-4a1f-82cd-d0217273e8ae"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a511fe8-bfcd-4b80-8182-76f9dc420a7b"
+                  name="Excluir post"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0cea69be-b8a2-42f5-864c-4a0e4c3758d6"
+        name="Usuário"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="00073368-ad44-4f69-a5c2-fbe5bfb74c3c"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="c019070d-9de9-4261-9141-3f21080b6e72"
+              LastKnownName="Visitante"
+              LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="73675c0a-2fc9-4d02-8a12-69e14e1910f1"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Publicar post"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="71d81c8e-261f-496a-861d-49c097925c88"
+              LastKnownName="Publicar post"
+              LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="de5bdc6d-f7dc-4b3d-8f76-e60e8905f4aa"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dcec9b31-12bc-4eb8-a22d-be9b5968b6af"
+                  name="Publicar post"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="71d81c8e-261f-496a-861d-49c097925c88"
+        name="Publicar post"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="37f5409c-45d2-40d3-bb37-952de7ce4d37"
+        name="Editar post"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e65f2d9-0aa9-4261-b83c-278779075f81"
+        name="Excluir post"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="59f3b29d-c99c-48ff-9a8d-e8fca386011f"
+        name="Efetuar login "
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="687aff78-8fc1-48c2-8675-42e039c5f3ed"
+        name="Cadastrar tags"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="414174ad-5fb2-4a14-af4d-0708b6606f93">
+            <useCaseMoniker
+              Id="71d81c8e-261f-496a-861d-49c097925c88"
+              LastKnownName="Publicar post"
+              LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

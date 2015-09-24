@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="69cfac67-e190-42bd-8ab6-96d7ad9bb9f0" name="UMLUseCaseDeusCumpre" linkedPackageId="ef2bca82-085f-41b1-91a1-d74461933699" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="a59576e4-b0f4-493b-a5f9-73a8678efab4">
+      <profileInstance Id="bcf9dda7-5728-41a1-8f4b-d2b703a68ec0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8ad9a469-f1e8-4b0f-a1f6-4dcf433e11be">
+      <profileInstance Id="a1c77990-2fc7-4bc8-acce-aabfe6a331da" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3d002ce4-3c47-4871-8d61-3d940915054b" name="Visitante" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c019070d-9de9-4261-9141-3f21080b6e72" />
+        <targetEnds>
+          <association Id="6f6fc8c3-76aa-4f6c-a421-00c0679db9d3" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="Efetuar login " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="98a5f95b-5bd0-49c7-a482-ddb34dd7f587" LastKnownName="Efetuar login " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1af69907-ff2c-48e2-af9a-378422b4e1e8" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bd2fb6dd-0dcd-4cdd-8fb1-524e22b25e2a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2a49046f-3ddf-453b-a163-51ea60ddd160" name="Efetuar login " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2ce7d687-6dd8-45da-a8a8-d510c8e27fe5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c04daf55-394e-4458-ae58-4e1bf3fc905e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="d71a0935-2356-482e-ac6a-5907e675c265" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="24f25ec5-4adf-441f-8185-c4084e8c1695" />
+        <generalsInternal>
+          <generalization Id="29a0c35a-53d4-43c3-a764-91403f796a58" isSubstitutable="false">
+            <actorMoniker Id="863e4911-7491-4011-8417-0046f1485dd9" LastKnownName="Usuário" />
+            <elementDefinition Id="531c44cc-88c9-4c86-bb3f-5de2fb5c98dd" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="c4c0319a-249f-418d-9556-a88accf796c5" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Editar post" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8fdc3a35-9f63-45ee-a11d-302b559921a9" LastKnownName="Editar post" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a83d6e0-2ab2-4617-9b22-48fd1f359cc0" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4d5fef54-509e-4d22-8aca-6b0c6d0b1688" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2567d721-0852-41f1-ac20-2abfabdc8722" name="Editar post" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="492b1736-f4f6-4546-996a-6b594a6032db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="54d395a3-3a58-42b2-ab51-c4baf7556e52" />
+          </association>
+          <association Id="a3b43675-8964-4be0-a7ea-4ad8fd57a5db" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Excluir post" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0afe3f39-76e6-4db0-8dae-89704c4b359a" LastKnownName="Excluir post" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d586dadd-f86d-4352-b6a4-8b46b76df1f8" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c90a373a-e0f8-4a1f-82cd-d0217273e8ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01993a48-6f98-43f8-b6a7-7438c4ffb963" name="Excluir post" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0a511fe8-bfcd-4b80-8182-76f9dc420a7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d7f50333-76ef-4746-8fbe-20c301f1e70f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="863e4911-7491-4011-8417-0046f1485dd9" name="Usuário" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0cea69be-b8a2-42f5-864c-4a0e4c3758d6" />
+        <generalsInternal>
+          <generalization Id="40734ca0-3b92-459c-adbc-9c9734e0f39c" isSubstitutable="false">
+            <actorMoniker Id="3d002ce4-3c47-4871-8d61-3d940915054b" LastKnownName="Visitante" />
+            <elementDefinition Id="00073368-ad44-4f69-a5c2-fbe5bfb74c3c" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="2d41bbb0-b19d-47c4-98c9-1c8e2b2dad1d" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Publicar post" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="50e77c5e-38a0-4309-adcb-59cb37b0400f" LastKnownName="Publicar post" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f9d0ab6c-82ba-4b3e-98ba-fb7af003b1e2" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="de5bdc6d-f7dc-4b3d-8f76-e60e8905f4aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="08c86641-8720-465f-87d0-0e215230110f" name="Publicar post" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dcec9b31-12bc-4eb8-a22d-be9b5968b6af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="73675c0a-2fc9-4d02-8a12-69e14e1910f1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="50e77c5e-38a0-4309-adcb-59cb37b0400f" name="Publicar post" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71d81c8e-261f-496a-861d-49c097925c88" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8fdc3a35-9f63-45ee-a11d-302b559921a9" name="Editar post" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="37f5409c-45d2-40d3-bb37-952de7ce4d37" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0afe3f39-76e6-4db0-8dae-89704c4b359a" name="Excluir post" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e65f2d9-0aa9-4261-b83c-278779075f81" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="98a5f95b-5bd0-49c7-a482-ddb34dd7f587" name="Efetuar login " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59f3b29d-c99c-48ff-9a8d-e8fca386011f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="20abefc7-7b00-481d-8538-63031df552a7" name="Cadastrar tags" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="687aff78-8fc1-48c2-8675-42e039c5f3ed" />
+        <extendedCases>
+          <extend Id="c790ed77-c5cd-4161-946b-018c64356542">
+            <useCaseMoniker Id="50e77c5e-38a0-4309-adcb-59cb37b0400f" LastKnownName="Publicar post" />
+            <elementDefinition Id="414174ad-5fb2-4a14-af4d-0708b6606f93" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="ef2bca82-085f-41b1-91a1-d74461933699" name="DeusCumpre.ModelingProject">
+    <elementDefinition Id="7d593054-92f9-48ab-bd1c-ce0a170f2d80" />
+  </package>
+</useCaseModelRoot>
