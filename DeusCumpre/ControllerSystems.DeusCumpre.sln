@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Tests", "1 - Tests", "{8A5396B1-15D9-4A65-8758-698127D7BA96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{2B4BD4A3-5B2F-4A72-927F-DC5D901CD665}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Data", "2 - Data", "{1C4D4EF8-D432-4C12-8F2C-5D72968DD9E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Application", "4 - Application", "{FF768540-148F-41C0-A13E-C85F2F9D38D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Presentation", "5 - Presentation", "{91B783CF-F47D-49AB-A7EB-8D6BA22B0CD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Documentation", "0 - Documentation", "{FE3F6273-A434-4015-B55B-5C9011C5368B}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ControllerSystems.DeusCumpre.ModelingProject", "DeusCumpre.ModelingProject\ControllerSystems.DeusCumpre.ModelingProject.modelproj", "{92C6E696-31BE-47FD-B777-BC12F8D7ED4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSystems.DeusCumpre.Tests.UnitTest", "DeusCumpre.Tests.UnitTest\ControllerSystems.DeusCumpre.Tests.UnitTest.csproj", "{F75E5D32-A1A2-4E5D-B1A1-91380BDE8DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSystems.DeusCumpre.Domain", "DeusCumpre.Domain\ControllerSystems.DeusCumpre.Domain.csproj", "{598BF0EC-EEEB-4736-92C1-8F272975F225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSystems.DeusCumpre.Application", "ControllerSystems.DeusCumpre.Application\ControllerSystems.DeusCumpre.Application.csproj", "{8BF3B10F-C9B1-49D5-ABBD-7EB1272E37E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSystems.DeusCumpre.Data", "ControllerSystems.DeusCumpre.Data\ControllerSystems.DeusCumpre.Data.csproj", "{8B58DAA5-7CCA-4831-8AF0-324170632D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSystems.DeusCumpre.WebApi", "ControllerSystems.DeusCumpre.WebApi\ControllerSystems.DeusCumpre.WebApi.csproj", "{484528BF-7ACC-4D4A-BC56-591C85F29A71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92C6E696-31BE-47FD-B777-BC12F8D7ED4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C6E696-31BE-47FD-B777-BC12F8D7ED4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C6E696-31BE-47FD-B777-BC12F8D7ED4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C6E696-31BE-47FD-B777-BC12F8D7ED4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75E5D32-A1A2-4E5D-B1A1-91380BDE8DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75E5D32-A1A2-4E5D-B1A1-91380BDE8DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75E5D32-A1A2-4E5D-B1A1-91380BDE8DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75E5D32-A1A2-4E5D-B1A1-91380BDE8DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598BF0EC-EEEB-4736-92C1-8F272975F225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598BF0EC-EEEB-4736-92C1-8F272975F225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598BF0EC-EEEB-4736-92C1-8F272975F225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598BF0EC-EEEB-4736-92C1-8F272975F225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF3B10F-C9B1-49D5-ABBD-7EB1272E37E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF3B10F-C9B1-49D5-ABBD-7EB1272E37E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF3B10F-C9B1-49D5-ABBD-7EB1272E37E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF3B10F-C9B1-49D5-ABBD-7EB1272E37E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B58DAA5-7CCA-4831-8AF0-324170632D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B58DAA5-7CCA-4831-8AF0-324170632D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B58DAA5-7CCA-4831-8AF0-324170632D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B58DAA5-7CCA-4831-8AF0-324170632D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484528BF-7ACC-4D4A-BC56-591C85F29A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484528BF-7ACC-4D4A-BC56-591C85F29A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484528BF-7ACC-4D4A-BC56-591C85F29A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484528BF-7ACC-4D4A-BC56-591C85F29A71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92C6E696-31BE-47FD-B777-BC12F8D7ED4F} = {FE3F6273-A434-4015-B55B-5C9011C5368B}
+		{F75E5D32-A1A2-4E5D-B1A1-91380BDE8DDA} = {8A5396B1-15D9-4A65-8758-698127D7BA96}
+		{598BF0EC-EEEB-4736-92C1-8F272975F225} = {2B4BD4A3-5B2F-4A72-927F-DC5D901CD665}
+		{8BF3B10F-C9B1-49D5-ABBD-7EB1272E37E1} = {FF768540-148F-41C0-A13E-C85F2F9D38D7}
+		{8B58DAA5-7CCA-4831-8AF0-324170632D62} = {1C4D4EF8-D432-4C12-8F2C-5D72968DD9E8}
+		{484528BF-7ACC-4D4A-BC56-591C85F29A71} = {91B783CF-F47D-49AB-A7EB-8D6BA22B0CD9}
+	EndGlobalSection
+EndGlobal

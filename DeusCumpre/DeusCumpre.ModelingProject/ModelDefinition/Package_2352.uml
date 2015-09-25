@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a3f73998-1324-4be9-8b00-b802076f137d"
+  name="Services" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b2acdd91-d1d2-415a-8c2a-98b5e65f19f4"
+        name="Authentication"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="21f110f1-37c1-4e37-beea-8f50610d53e7"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce8e919c-9af7-48f4-a847-7592777d8dc7">
+                <propertyInstance
+                  Id="0fbf46b6-7fec-47b7-80c6-e40fdbe8adaa"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05b0e989-e25f-4a63-9af2-204b8515b37d">
+                <propertyInstance
+                  Id="1455ce44-1279-4470-a491-9860a937f29d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2f669422-7749-4c5e-a80f-b6ff67504126">
+                <propertyInstance
+                  Id="20dbb8ae-f2c0-4096-81d0-7968cd9d65d9"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0f97f936-5c30-4c6c-83cb-5546f66eafe8">
+                <propertyInstance
+                  Id="5cd0b18c-a558-4ca1-891a-5f08bec4f905"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3fafb74d-73bf-44c1-9c3d-0655f759f354">
+                <propertyInstance
+                  Id="45f8364d-9a26-4839-948e-c7179c78fac6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b8abfe5b-2552-4cb1-b1ae-8577ac84d74b">
+            <interfaceMoniker
+              Id="7bb3eeef-873f-4500-81b3-2dc2a03b8cc3"
+              LastKnownName="IAuthentication"
+              LastKnownLocation="Package_2030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bbbf7dff-559d-4665-9bf3-080440f7da7a"
+            name="LogOut"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d89ff193-d6a6-4867-a57c-f3143a1357c2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75b36d12-75b8-4a4e-9e6e-c9295f9b0f3f">
+                    <propertyInstance
+                      Id="3e3abaf2-da21-474f-8b77-7dec32390472"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="828ac5ed-8877-4cf2-ad89-556496d1a776">
+                    <propertyInstance
+                      Id="7c9dba6d-9045-4d72-95cf-335892f7c990"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffa6abc7-4e94-4e07-8581-ec8e7100e079">
+                    <propertyInstance
+                      Id="208f836d-43cd-44e5-9c22-a46568f2a26e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99fd926f-f38c-455f-ac24-e8b5a7da318a">
+                    <propertyInstance
+                      Id="559a6d2e-00b0-4a5d-8423-965d0716342f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b01d6ca-01fe-4cf5-afe2-99bd4c7fd785">
+                    <propertyInstance
+                      Id="f7a71e58-c47b-49f1-9cf6-c6a09e95361f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7e06f44-66b4-427a-b547-e299f5b6d41b">
+                    <propertyInstance
+                      Id="6484d513-2037-4aac-a32b-7d89e505f870"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="1ade5e0f-b4c8-458a-8043-2539011ab3f1"
+            name="LogIn"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0557b35f-bcef-41f7-8a1a-9ad8e4f7cff4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d8bd8eb-bf11-46a7-8fd3-84a3f6bef92b">
+                    <propertyInstance
+                      Id="8fbc0074-e187-485b-ac5f-9c05e1d97ca6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f6246c0-6359-488c-a758-51ae492f4157">
+                    <propertyInstance
+                      Id="600f4414-4d52-4a90-8865-9a785ad0cccc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d198f4df-0675-4071-9c20-eef8e3b27ce0">
+                    <propertyInstance
+                      Id="dcfdf278-fc4a-484c-b38a-f73c4448de14"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a168a9ef-8e59-4190-b89b-4b2adecc315f">
+                    <propertyInstance
+                      Id="551c7d53-db27-49c5-ae30-699359ea4795"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c56df60f-b540-42c4-8f36-b71f1ae716bf">
+                    <propertyInstance
+                      Id="769fdfa2-0b17-4edc-8c1b-da6fea7f47e8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d64d7625-14a0-41f9-ba39-217e586617d9">
+                    <propertyInstance
+                      Id="3ad45460-cd31-41f9-9137-ea8573966225"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9101a130-6994-4989-85a7-192d3587c253"
+                  name="login"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3ade729c-8e25-41ad-be48-d3f555e3fda1"
+                  name="password"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="231158a3-56f6-434b-b8a8-2a41214c246b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7da16f2c-1936-468b-b637-1193cb0131ae"
+                      LastKnownName="User"
+                      LastKnownLocation="Package2_2022.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

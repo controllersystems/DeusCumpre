@@ -1,8 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="7d593054-92f9-48ab-bd1c-ce0a170f2d80"
   name="DeusCumpre.ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="32944fe6-52ae-41d0-8b31-f9de8353dbc4"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c1539d69-1ddd-4680-b90c-5882891ef004">
+          <propertyInstance
+            Id="789918ae-c6bc-4b0c-b0b8-c9734a201844"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="287655c3-c89c-4f3f-8661-1ba743bb50ac">
+          <propertyInstance
+            Id="26746a9d-6284-4318-ae2b-2aa72af8f822"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="52b6e99f-375b-4096-b3e6-9bb3f8f0d0de">
+          <propertyInstance
+            Id="e9c41782-52e0-4277-be7d-95b190e486be"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="6f01d9f6-7bc0-49c0-bb13-32187a333b13"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="880f3408-c943-44b6-9cff-ee36b29fbdcd">
+          <propertyInstance
+            Id="ffd0e81e-5e1a-40aa-8a33-63aa3572dbbd"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c0ea6cc8-c3c8-486c-bae8-d0c6d08cfc63">
+          <propertyInstance
+            Id="0885ce18-04db-40d1-bc52-5c4ba40ec033"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="36c48e2b-bf30-40b5-bbba-8e2b6de05bff">
+          <propertyInstance
+            Id="7ec9e280-2aaf-44db-a4e6-cb6c43b06de8"
+            name="ProjectPath"
+            value="ClassTemplate=..\DeusCumpre.ModelingProjectLib\DeusCumpre.ModelingProjectLib.csproj|EnumTemplate=..\DeusCumpre.ModelingProjectLib\DeusCumpre.ModelingProjectLib.csproj|InterfaceTemplate=..\DeusCumpre.ModelingProjectLib\DeusCumpre.ModelingProjectLib.csproj|StructTemplate=..\DeusCumpre.ModelingProjectLib\DeusCumpre.ModelingProjectLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="ff650337-be4c-4e1e-80cc-b79ea2897c37">
+          <propertyInstance
+            Id="39cf7d1e-711b-4f20-887f-a48d4a4031d5"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="14210b06-457e-4bd9-883c-9cd4e4a0fea1">
+          <propertyInstance
+            Id="e30091fe-de4b-4c24-95fc-974501e4b4f9"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="9e78433f-e67f-43ae-9b69-e2970e8883d8">
+          <propertyInstance
+            Id="65751b73-6fd3-4e66-b672-c30a1706b638"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="b41bfd41-921e-41e7-97f8-c3743bac0e59">
+          <propertyInstance
+            Id="1c766195-61db-4ad1-afca-891ed857ce4d"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -15,6 +97,18 @@
       <profileInstance
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="f08d2d75-2dd8-453e-88bb-bab62b3a83d1">
+      <profileInstance
+        Id="738843c0-ba4a-4460-8a36-3e7aeeb5e819"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="d7d90add-81a4-45d4-b2a7-49ae137cb4d0">
+      <profileInstance
+        Id="0bdfe116-0ed0-4692-88b6-ff46329ad4fe"
+        name="TextTemplateBindings" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -221,6 +315,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="821b2070-96c1-49f3-9023-eb384e12e71a"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Efetuar logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ddb16df5-33a5-4707-922b-da17ebb5fac5"
+              LastKnownName="Efetuar logout"
+              LastKnownLocation="DeusCumpre.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e21b52cc-4892-4701-880d-90c14092da4a"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dc8b2d44-f7a9-43a2-b665-85cbb28a9c93"
+                  name="Efetuar logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -268,6 +401,19 @@
           </extend>
         </extendedCases>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ddb16df5-33a5-4707-922b-da17ebb5fac5"
+        name="Efetuar logout"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1e5a5539-6eac-4ed0-87d4-c3c3c19e5771"
+        LastKnownName="ControllerSystems"
+        LastKnownLocation="Package_2056.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
