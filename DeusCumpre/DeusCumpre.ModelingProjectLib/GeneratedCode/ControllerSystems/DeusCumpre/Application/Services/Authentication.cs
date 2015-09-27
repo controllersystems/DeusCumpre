@@ -4,37 +4,25 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace ControllerSystems.DeusCumpre.Domain.Entities
+namespace ControllerSystems.DeusCumpre.Application.Services
 {
+	using ControllerSystems.DeusCumpre.Application.Interfaces.Services;
+	using ControllerSystems.DeusCumpre.Domain.Entities;
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public class User
+	public class Authentication : IAuthenticationService
 	{
-		public bool IsAdmin
+		public virtual void LogOut()
 		{
-			get;
-			set;
+			throw new System.NotImplementedException();
 		}
 
-		public string Login
+		public static User LogIn(string login, string password)
 		{
-			get;
-			set;
-		}
-
-		public string Password
-		{
-			get;
-			set;
-		}
-
-		public int Id
-		{
-			get;
-			set;
+			throw new System.NotImplementedException();
 		}
 
 	}

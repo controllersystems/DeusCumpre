@@ -39,12 +39,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeneratedCode\ControllerSystems\Application\Authentication.cs" />
-    <Compile Include="GeneratedCode\ControllerSystems\Application\Services\Authentication.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Application\Interfaces\Repositories\IPostRepository.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Application\Interfaces\Repositories\IRepositoryBase.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Application\Interfaces\Repositories\IUserRepository.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Application\Interfaces\Services\IAuthenticationService.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Application\Interfaces\Services\IPublisherService.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Application\Services\Authentication.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Application\Services\Publisher.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Data\Repositories\PostRepository.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Data\Repositories\RepositoryBase.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Data\Repositories\UserRepository.cs" />
     <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Domain\Entities\Post.cs" />
     <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Domain\Entities\Tags.cs" />
     <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Domain\Entities\User.cs" />
     <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Domain\Interfaces\IAuthentication.cs" />
+    <Compile Include="GeneratedCode\ControllerSystems\DeusCumpre\Domain\Interfaces\IPublisher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

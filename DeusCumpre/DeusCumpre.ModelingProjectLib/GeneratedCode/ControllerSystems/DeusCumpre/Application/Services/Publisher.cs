@@ -4,24 +4,32 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace ControllerSystems.DeusCumpre.Domain.Interfaces
+namespace ControllerSystems.DeusCumpre.Application.Services
 {
+	using ControllerSystems.DeusCumpre.Application.Interfaces.Services;
 	using ControllerSystems.DeusCumpre.Domain.Entities;
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public interface IAuthentication 
+	public class Publisher : IPublisherService
 	{
-		void LogOut();
-        /// <summary>
-        /// Este método retorna um usuário logado ou nulo caso não tenha sido possível efetuar o login
-        /// </summary>
-        /// <param name="login"></param>
-        /// <param name="password"></param>
-        /// <returns></returns>
-		User LogIn(string login, string password);
+		public virtual void Publish(Post post)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public virtual void Delete(Post post)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public virtual void Edit(Post post)
+		{
+			throw new System.NotImplementedException();
+		}
+
 	}
 }
 

@@ -42,7 +42,6 @@
     <Compile Include="Entities\Post.cs" />
     <Compile Include="Entities\Tags.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="Interfaces\IAuthentication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

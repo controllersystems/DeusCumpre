@@ -4,38 +4,21 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace ControllerSystems.DeusCumpre.Domain.Entities
+namespace ControllerSystems.DeusCumpre.Domain.Interfaces
 {
+	using ControllerSystems.DeusCumpre.Domain.Entities;
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public class User
+	public interface IPublisher 
 	{
-		public bool IsAdmin
-		{
-			get;
-			set;
-		}
+		void Publish(Post post);
 
-		public string Login
-		{
-			get;
-			set;
-		}
+		void Delete(Post post);
 
-		public string Password
-		{
-			get;
-			set;
-		}
-
-		public int Id
-		{
-			get;
-			set;
-		}
+		void Edit(Post post);
 
 	}
 }

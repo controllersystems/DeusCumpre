@@ -4,38 +4,24 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace ControllerSystems.DeusCumpre.Domain.Entities
+namespace ControllerSystems.DeusCumpre.Application.Interfaces.Repositories
 {
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public class User
+	public interface IRepositoryBase 
 	{
-		public bool IsAdmin
-		{
-			get;
-			set;
-		}
+		void Add();
 
-		public string Login
-		{
-			get;
-			set;
-		}
+		void Delete();
 
-		public string Password
-		{
-			get;
-			set;
-		}
+		void GetAll();
 
-		public int Id
-		{
-			get;
-			set;
-		}
+		void GetById();
+
+		void Update();
 
 	}
 }

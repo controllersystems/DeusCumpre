@@ -10,14 +10,50 @@ namespace DeusCumpre.Tests.UnitTest
     public class UnitTest1
     {
         [TestMethod]
+        public void PasswordIsNotValid()
+        {
+            try
+            {
+                User user = new User()
+                {
+                    Login = "login"
+                };
+                var result = user.IsValid;
+
+                Assert.AreEqual(false, result);
+            }
+            catch (ArgumentNullException argEx)
+            {
+                Assert.AreEqual("Password", argEx.ParamName);
+            }
+        }
+
+        [TestMethod]
+        public void LoginIsNotValid()
+        {
+            try
+            {
+                User user = new User()
+                {
+                    Password = "password"
+                };
+
+                var result = user.IsValid;
+
+                Assert.AreEqual(false, result);
+            }
+            catch (ArgumentNullException argEx)
+            {
+                Assert.AreEqual("Login", argEx.ParamName);
+            }
+        }
+
+        [TestMethod]
         public void LogIn()
         {
-            User user = new User()
-            {
-                Login = "rodrigo.cruz",
-                Password = "1234"
-            };
-            bool result = user.LogIn(new Authentication(new UserRepository()));
+            AuthenticationService authenticationService = new AuthenticationService(new UserRepository());
+
+            var result = authenticationService.LogIn("rodrigo.cruz", "1234");
 
             Assert.AreEqual(false, result);
         }

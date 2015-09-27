@@ -4,26 +4,15 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace ControllerSystems.Application
+namespace ControllerSystems.DeusCumpre.Data.Repositories
 {
-	using ControllerSystems.DeusCumpre.Domain.Entities;
-	using ControllerSystems.DeusCumpre.Domain.Interfaces;
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public class Authentication : IAuthentication
+	public class UserRepository : RepositoryBase
 	{
-		public virtual void LogOut()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public User LogIn(string login, string password)
-		{
-			throw new System.NotImplementedException();
-		}
-    }
+	}
 }
 

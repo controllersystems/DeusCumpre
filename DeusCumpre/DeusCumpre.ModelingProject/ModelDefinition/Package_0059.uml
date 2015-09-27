@@ -1,20 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
-  Id="7251b0a6-754e-4a7f-b856-294f9e4fb61f"
-  name="Interfaces" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  Id="e1558a74-bb3d-4b25-9a82-12c0f5b71e26"
+  name="Data" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <packagedElements>
     <packageHasNamedElement>
       <packageMoniker
-        Id="d2e780d5-ad67-436b-9c0f-818faf17a9c7"
-        LastKnownName="Services"
-        LastKnownLocation="Package_0046.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <packageMoniker
-        Id="0435ee07-8129-42ba-a398-511cbd53c3f4"
+        Id="092ecd17-3492-472c-93db-6a81497af1d3"
         LastKnownName="Repositories"
-        LastKnownLocation="Package_0047.uml" />
+        LastKnownLocation="Package1_0059.uml" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
