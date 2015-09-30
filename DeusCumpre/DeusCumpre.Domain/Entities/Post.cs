@@ -13,9 +13,25 @@ namespace ControllerSystems.DeusCumpre.Domain.Entities
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public DateTime CreationDate { get; set; }
+        public DateTime CreationDate { get; private set; }
         public string Body { get; set; }
         public User User { get; set; }
         public List<String> Tags { get; set; }
+        public bool IsValid
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(Title))
+                    throw new ArgumentNullException("Title", "Favor informar o título!");
+                if (string.IsNullOrEmpty(Body))
+                    throw new ArgumentNullException("Body", "Favor informar o corpo do post!");
+                return true;
+            }
+        }
+
+        public Post()
+        {
+            CreationDate = DateTime.Now;
+        }
     }
 }
