@@ -14,6 +14,14 @@ namespace DeusCumpre.Tests.UnitTest
     public class UnitTest1
     {
         [TestMethod]
+        public void SetVariables()
+        {
+            string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string path = (System.IO.Path.GetDirectoryName(executable));
+            AppDomain.CurrentDomain.SetData("DataDirectory", path);
+        }
+
+        [TestMethod]
         public void PasswordIsNotValid()
         {
             try

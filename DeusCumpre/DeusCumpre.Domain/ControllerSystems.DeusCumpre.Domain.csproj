@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Post.cs" />
-    <Compile Include="Entities\Tags.cs" />
+    <Compile Include="Entities\Tag.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

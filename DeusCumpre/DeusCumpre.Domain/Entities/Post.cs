@@ -16,7 +16,7 @@ namespace ControllerSystems.DeusCumpre.Domain.Entities
         public DateTime CreationDate { get; private set; }
         public string Body { get; set; }
         public User User { get; set; }
-        public List<String> Tags { get; set; }
+        public List<string> Tags { get; set; }
         public bool IsValid
         {
             get
@@ -32,6 +32,11 @@ namespace ControllerSystems.DeusCumpre.Domain.Entities
         public Post()
         {
             CreationDate = DateTime.Now;
+        }
+
+        public void Publish()
+        {
+            this.CreationDate = DateTime.Now;
         }
     }
 }
