@@ -1,4 +1,11 @@
-﻿using System;
+﻿using ControllerSystems.DeusCumpre.Application.Interfaces.Repositories;
+using ControllerSystems.DeusCumpre.Application.Interfaces.Services;
+using ControllerSystems.DeusCumpre.Application.Services;
+using ControllerSystems.DeusCumpre.Data.Repositories;
+using ControllerSystems.DeusCumpre.WebApi.App_Start;
+using ControllerSystems.DeusCumpre.WebApi.AutoMapper;
+using ControllerSystems.DeusCumpre.WebApi.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,6 +29,8 @@ namespace ControllerSystems.DeusCumpre.WebApi
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            AutoMapperConfig.RegisterMappings();
         }
     }
 }

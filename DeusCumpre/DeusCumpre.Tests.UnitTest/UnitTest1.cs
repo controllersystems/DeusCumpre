@@ -7,6 +7,7 @@ using ControllerSystems.DeusCumpre.Data.Repositories;
 using ControllerSystems.DeusCumpre.Application.DataTransferObjects;
 using ControllerSystems.DeusCumpre.Data.AutoMapper;
 using ControllerSystems.DeusCumpre.Application.AutoMapper;
+using System.Collections.Generic;
 
 namespace DeusCumpre.Tests.UnitTest
 {
@@ -79,8 +80,8 @@ namespace DeusCumpre.Tests.UnitTest
             var userDto = new UserDto()
             {
                 IsAdmin = false,
-                Login = "rodrigo.cruz" + DateTime.Now.ToString(),
-                Password = "1234"
+                Login = "admin",
+                Password = "123"
             };
             var result = authenticationService.Create(userDto);
 
@@ -91,7 +92,7 @@ namespace DeusCumpre.Tests.UnitTest
         public void CreatePost()
         {
             AutoMapperDataConfig.RegisterMappings();
-            PublisherService publisherService = new PublisherService(new PostRepository());
+            PublisherService publisherService = new PublisherService(new PostRepository(), new TagRepository());
 
             var postDto = new PostDto()
             {
@@ -99,7 +100,11 @@ namespace DeusCumpre.Tests.UnitTest
                 Title = "Title",
                 User = new UserDto()
                 {
-                    Login = "rodrigo.cruz2"
+                    Login = "admin"
+                },
+                Tags = new List<string>
+                {
+                    "Deus", "Bíblia", "Deus vivo"
                 }
             };
 
@@ -110,7 +115,7 @@ namespace DeusCumpre.Tests.UnitTest
         public void UpdatePost()
         {
             AutoMapperDataConfig.RegisterMappings();
-            PublisherService publisherService = new PublisherService(new PostRepository());
+            PublisherService publisherService = new PublisherService(new PostRepository(), new TagRepository());
 
             var postDto = new PostDto()
             {
@@ -138,9 +143,9 @@ namespace DeusCumpre.Tests.UnitTest
         public void DeletePost()
         {
             AutoMapperDataConfig.RegisterMappings();
-            PublisherService publisherService = new PublisherService(new PostRepository());
+            PublisherService publisherService = new PublisherService(new PostRepository(), new TagRepository());
 
-            int maxId = publisherService.GetAll().Max(x => x.Id);
+            int maxId = publisherService.GetAllPosts().Max(x => x.Id);
 
             var postDto = new PostDto()
             {

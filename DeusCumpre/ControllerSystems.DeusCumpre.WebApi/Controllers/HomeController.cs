@@ -23,9 +23,16 @@ namespace ControllerSystems.DeusCumpre.WebApi.Controllers
         {
             HomeViewModel model = new HomeViewModel();
 
-            model.Posts = Mapper.Map<IEnumerable<PostDto>, IEnumerable<PostViewModel>>(iPublishService.GetAll().Take(5));
+            model.Posts = Mapper.Map<List<PostDto>, List<PostViewModel>>(iPublishService.GetAllPosts().Take(5).ToList());
+
+            model.Tags = Mapper.Map<List<TagDto>, List<TagViewModel>>(iPublishService.GetAllTags().ToList());
 
             return View(model);
+        }
+
+        public ActionResult Login()
+        {
+            return View();
         }
     }
 }

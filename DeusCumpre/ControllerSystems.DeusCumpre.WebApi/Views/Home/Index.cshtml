@@ -1,14 +1,43 @@
 ﻿@model ControllerSystems.DeusCumpre.WebApi.ViewModels.HomeViewModel
 
-<div id="body">
-    @if (Model.Posts != null)
-    {
-        foreach (var item in Model.Posts)
+<br />
+
+<div class="container">
+    <div class="col-md-10">
+        @if (Model.Posts != null)
         {
-            <div>
-                <h1>item.Title</h1>
-                <h3>item.Cre</h3>
-            </div>
+            foreach (var item in Model.Posts)
+            {
+                <div class="row">
+                    <h1>@item.Title</h1>
+                    <h3>Criado em @item.CreationDate.ToShortDateString() às @item.CreationDate.ToShortTimeString() por @item.User.Login</h3>
+                    <p>@item.Body</p>
+                    @if (item.Tags != null)
+                    {
+                        <h3>Tags</h3>
+                        <br />
+                        <ul class="list-inline">
+                            @foreach (var itemTag in item.Tags)
+                            {
+                                <li>@itemTag</li>
+                            }
+                        </ul>
+                    }
+                </div>
+            }
         }
-    }
+    </div>
+    <div class="col-md-2">
+        <h3>Tags</h3>
+        <br />
+        @if (Model.Tags != null)
+        {
+            <ul class="list-unstyled">
+                @foreach (var item in Model.Tags)
+                {
+                    <li>@item.Text</li>
+                }
+            </ul>
+        }
+    </div>
 </div>

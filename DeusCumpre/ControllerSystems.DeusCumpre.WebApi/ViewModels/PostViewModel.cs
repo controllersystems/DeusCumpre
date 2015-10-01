@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+
 namespace ControllerSystems.DeusCumpre.WebApi.ViewModels
 {
     public class PostViewModel
@@ -10,6 +11,6 @@ namespace ControllerSystems.DeusCumpre.WebApi.ViewModels
         public DateTime CreationDate { get; set; }
         public string Body { get; set; }
         public UserViewModel User { get; set; }
-        public List<String> Tags { get; set; }
+        public List<string> Tags { get; set; }
     }
 }

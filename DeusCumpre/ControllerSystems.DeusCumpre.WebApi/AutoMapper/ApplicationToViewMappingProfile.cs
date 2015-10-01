@@ -16,6 +16,7 @@ namespace ControllerSystems.DeusCumpre.WebApi.AutoMapper
         {
             Mapper.CreateMap<UserDto, UserViewModel>();
             Mapper.CreateMap<PostDto, PostViewModel>();
+            Mapper.CreateMap<TagDto, TagViewModel>();
         }
     }
 }

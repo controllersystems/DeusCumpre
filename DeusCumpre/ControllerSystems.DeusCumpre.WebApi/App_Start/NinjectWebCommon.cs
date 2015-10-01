@@ -14,6 +14,7 @@ namespace ControllerSystems.DeusCumpre.WebApi.App_Start
     using ControllerSystems.DeusCumpre.Application.Services;
     using ControllerSystems.DeusCumpre.Application.Interfaces.Repositories;
     using ControllerSystems.DeusCumpre.Data.Repositories;
+    using System.Web.Http;
 
     public static class NinjectWebCommon 
     {
@@ -50,6 +51,7 @@ namespace ControllerSystems.DeusCumpre.WebApi.App_Start
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
                 RegisterServices(kernel);
+                GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(kernel);
                 return kernel;
             }
             catch
@@ -68,6 +70,7 @@ namespace ControllerSystems.DeusCumpre.WebApi.App_Start
             kernel.Bind<IPublisherService>().To<PublisherService>();
 
             kernel.Bind<IPostRepository>().To<PostRepository>();
-        }        
+            kernel.Bind<ITagRepository>().To<TagRepository>();
+        }
     }
 }
