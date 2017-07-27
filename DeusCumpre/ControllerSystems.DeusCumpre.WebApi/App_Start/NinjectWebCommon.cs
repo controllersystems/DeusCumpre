@@ -68,7 +68,9 @@ namespace ControllerSystems.DeusCumpre.WebApi.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IPublisherService>().To<PublisherService>();
+            kernel.Bind<IAuthenticationService>().To<AuthenticationService>();
 
+            kernel.Bind<IUserRepository>().To<UserRepository>();
             kernel.Bind<IPostRepository>().To<PostRepository>();
             kernel.Bind<ITagRepository>().To<TagRepository>();
         }

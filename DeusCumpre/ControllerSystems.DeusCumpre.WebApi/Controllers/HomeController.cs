@@ -13,10 +13,12 @@ namespace ControllerSystems.DeusCumpre.WebApi.Controllers
     public class HomeController : Controller
     {
         private readonly IPublisherService iPublishService;
+        private readonly IAuthenticationService iAuthenticationService;
 
-        public HomeController(IPublisherService iPublishService)
+        public HomeController(IPublisherService iPublishService, IAuthenticationService iAuthenticationService)
         {
             this.iPublishService = iPublishService;
+            this.iAuthenticationService = iAuthenticationService;
         }
 
         public ActionResult Index()
@@ -32,6 +34,27 @@ namespace ControllerSystems.DeusCumpre.WebApi.Controllers
 
         public ActionResult Login()
         {
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(UserViewModel user)
+        {
+            var userDto = Mapper.Map<UserViewModel, UserDto>(user);
+            try
+            {
+                iAuthenticationService.Create(userDto);
+            }
+            catch (ArgumentException argEx)
+            {
+                ModelState.AddModelError(argEx.ParamName, argEx.Message);
+            }
+
             return View();
         }
     }
